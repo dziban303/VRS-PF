@@ -15,7 +15,8 @@ rows_pf=[]
 print('start')
 
 # get all icaos from vrs and stuff them into an array so we can reference later
-with open(csv_vrs) as file_obj_vrs:
+#with open(csv_vrs) as file_obj_vrs:
+with open(csv_vrs, mode="r", encoding="utf-8", errors="ignore") as file_obj_vrs:
 
     reader_obj_vrs = csv.reader(file_obj_vrs)
 
